@@ -1,8 +1,8 @@
 const mongoose =require("mongoose")
 const schema = mongoose.Schema({
-    "PRODUCT":String,
-        "PRICE":String
+    "NAME":{type:String, required:true},
+    "PRICE":{type:String, required:true}
     
 })
 let productmodel = mongoose.model("product",schema)
-module.export = {productmodel}
+module.exports = {productmodel}
